@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.students-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+.student-card h2 {
+  margin-bottom: 10px;
+}
+
+.pass {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.fail {
+  color: #ef4444;
+  font-weight: bold;
+}
